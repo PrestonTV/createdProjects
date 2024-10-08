@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay('7')" class="buttons" id="seven">7</button>
+            <button onclick="appendToDisplay('8')" class="buttons" id="eight">8</button>
+            <button onclick="appendToDisplay('9')" class="buttons" id="nine">9</button>
+            <button onclick="appendToDisplay('+')" class="symbol" id="plus">+</button>
+
+            <button onclick="appendToDisplay('4')" class="buttons" id="four">4</button>
+            <button onclick="appendToDisplay('5')" class="buttons" id="five">5</button>
+            <button onclick="appendToDisplay('6')" class="buttons" id="six">6</button>
+            <button onclick="appendToDisplay('-')" class="symbol" id="minus">-</button>
+
+            <button onclick="appendToDisplay('1')" class="buttons" id="one">1</button>
+            <button onclick="appendToDisplay('2')" class="buttons" id="two">2</button>
+            <button onclick="appendToDisplay('3')" class="buttons" id="three">3</button>
+            <button onclick="appendToDisplay('*')"class="symbol" id="times">x</button>
+
+            <button onclick="appendToDisplay('0')" ondblclick="calculate()" class="extra-symbol" id="zero">0</button>
+            <button onclick="appendToDisplay('.')" class="extra-symbol" id="decimal">.</button>
+            <button onclick="clearDisplay()" class="extra-symbol" id="clear-equal">C</button>
+            <button onclick="appendToDisplay('/')" class="symbol" id="divide">/</button>
+
+            <button class="empty-btn"></button>
+            <button class="empty-btn"></button>
+            <button class="empty-btn"></button>
+            <button onclick="calculate()" class="symbol" id="equal">=</button>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
