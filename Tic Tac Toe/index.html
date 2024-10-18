@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/tic-tac-toe-icon-2048x2046-i29aq6fb.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title-card">
+        <p class="title-text">Welcome to Tic Tac Toe</p>
+        <p class="letter-question">X's or O's</p>
+        <button onclick="chooseLetter('X')" class="letter-button">X</button>
+        <button onclick="chooseLetter('O')" class="letter-button">O</button>
+    </div>
+    <div class="container">
+        <button onclick="gameDecision()" class="spot" id="spot_one"></button>
+        <button onclick="gameDecision()" class="spot" id="spot_two"></button>
+        <button onclick="gameDecision()" class="spot" id="spot_three"></button>
+        <button onclick="gameDecision()" class="spot" id="spot_four"></button>
+        <button onclick="gameDecision()" class="spot" id="spot_five"></button>
+        <button onclick="gameDecision()" class="spot" id="spot_six"></button>
+        <button onclick="gameDecision()" class="spot" id="spot_seven"></button>
+        <button onclick="gameDecision()" class="spot" id="spot_eight"></button>
+        <button onclick="gameDecision()" class="spot" id="spot_nine"></button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
