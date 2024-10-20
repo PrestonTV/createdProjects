@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Ad Skipper",
+    "version": "1.0",
+    "description": "Skips YouTube videos when an ad pops up",
+    "icons": {
+      "16": "6zg8wo.jpg",
+      "48": "7c6a1b0e5d4a3aed3d42ab3e940910a9.jpg",
+      "128": "7ec11c3b21bc91d97776cb1cc6ddff34.jpg"
+    },
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
