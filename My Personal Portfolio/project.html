@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Page</title>
+    <link rel="shortcut icon" href="Icons/IMG_9165.JPG" type="image/x-icon">
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(234, 233, 235);
+        }
+
+        #home {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 1em;
+            padding: 0;
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            background-color: rgb(210, 204, 212);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            animation: menuFading 1s ease-in;
+        }
+
+        @keyframes menuFading {
+            0% {
+                transform: translateX(-100%);
+            }
+            80% {
+                transform: translateX(-2%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .projects-title {
+            font-size: 3em;
+            margin: 3em 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            background: rgb(210, 204, 212);
+            width: 20%;
+            margin: 1em;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-description {
+            text-align: center;
+            padding: 0 1em;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" id="home"><img src="Icons/vecteezy_home-icon-png-transparent_9589471.png" alt="Home"></a>
+
+    <h1 class="projects-title">Projects</h1>
+    <div class="projects-container">
+        <div class="project">
+            <h2 class="project-title">Rock, Paper, Scissors</h2>
+            <a href="https://github.com/PrestonTV/createdProjects/tree/main/Rock%2C%20Paper%2C%20Scissors" target="_blank" rel="noopener noreferrer"><img src="Project Images/Screenshot 2024-11-04 235813.png" alt="Rock, Paper, Scissors"></a>
+            <p class="project-description">Rock, Paper, Scissors is a simple, loved game by many people of different cultures, but not everyone has someone to play with all the time.
+                 So, I decided to make a very easy game that you can play against the computer, that keeps track of your score as you play.</p>
+        </div>
+    </div>
+</body>
+</html>

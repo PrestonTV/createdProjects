@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston's Portfolio</title>
+    <link rel="shortcut icon" href="Icons/IMG_9165.JPG" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+
+        #project-link {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;
+            font-size: 1.2em;
+            margin: auto 5px;
+            padding: 10px 10px;
+            position: relative;
+            top: 2px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            background: transparent;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 10px;
+        }
+
+        .menu, .color-changer {
+            width: 80px;
+            height: 80px;
+            padding: 20px;
+            position: relative;
+            right: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        .menu img, .color-changer img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .main-container {
+            display: inline-block;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            margin: auto;
+            padding: 0 0 0 0;
+            max-width: 100%;
+            height: 100vh;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: 0% 8%;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+
+        .name {
+            font-size: 2.5em;
+            margin: 0;
+            padding: 10px 0px 0px 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+        }
+
+        .title {
+            font-size: 1.5em;
+            margin: 0;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+        }
+
+        .socials {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 0 10px 0 0;
+        }
+
+        .resume {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;
+            width: 100px;
+            height: 30px;
+            margin: auto;
+            padding: 10px 10px;
+            position: relative;
+            top: -17px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            background: transparent;
+        }
+
+        .resume-picture {
+            width: 20px;
+            height: 20px;
+            padding: 0 10px 0 0;
+            position: relative;
+            top: 2px;
+        }
+
+        /*  */
+
+        [data-tab-content] {
+            display: none;
+        }
+
+        .active[data-tab-content] {
+            display: block;
+        }
+
+        .hero-container {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 0;
+            position: relative;
+            right: 12%;
+            max-width: 100%;
+            height: 100%;
+        }
+
+        .tablist-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 0;
+            max-width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background: rgb(152, 159, 176);
+
+            ul {
+                font-size: 1em;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 100;
+                display: flex;
+                margin: auto;
+                padding: 10px;
+                gap: 40px;
+                list-style: none;
+                cursor: pointer;
+            }
+
+            ul li {
+                width: 100px;
+                height: 100%;
+                margin: auto;
+                text-align: center;
+                
+            }
+        }
+
+        .tab-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+            padding: 0;
+            max-width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background: rgb(152, 159, 176);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="menu-page"></div>
+    <header>
+        <!-- <button onclick="displayMenu()" class="menu repo"><img src="Icons/control.png" alt="Menu Button"></button> -->
+         <a href="project.html" id="project-link">Projects</a>
+        <button onclick="colorChange()" class="color-changer repo"><img src="Icons/night-mode.png" alt="Light/Dark Mode"></button>
+    </header>
+    
+    <div class="main-container">
+        <img src="Icons/IMG_1873.jpg" alt="Preston Trippett" class="profile-image">
+        <h1 class="name">Preston Trippett</h1>
+        <h2 class="title">Frontend Web Developer</h2>
+
+        <div class="socials">
+            <a href="2025 Spring Resume.pdf" class="resume" download><img src="Icons/downloads.png" alt="Resume" class="resume-picture">Resume</a>
+            <a href="https://github.com/PrestonTV" target="_blank"><img src="Icons/github.png" alt="Github" class="links"></a>
+            <a href="https://www.linkedin.com/in/petrippett/" target="_blank"><img src="Icons/linkedin.png" alt="LinkedIn" class="links"></a>
+        </div>
+    </div>
+    
+    <!-- <div class="hero-container">
+        <div class="tablist-container">
+            <ul>
+                <li data-tab-target="#Work">Work</li>
+                <li data-tab-target="#Education">Education</li>
+                <li data-tab-target="#Skills">Skills</li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <div id="Work" data-tab-content class="active">
+                <h1>Work</h1>
+                <p>...</p>
+            </div>
+            <div id="Education" data-tab-content>
+                <h1>Education</h1>
+                <p>...</p>
+            </div>
+            <div id="Skills" data-tab-content>
+                <h1>Skills</h1>
+                <p>...</p>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="main.js"></script>
+</body>
+</html>
